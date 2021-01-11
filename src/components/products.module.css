@@ -1,0 +1,34 @@
+.text {
+  color: green;
+  font-size: 18px;
+}
+.page {
+  width: 90vw;
+  max-width: 1170px;
+  text-transform: capitalize;
+  margin: 0 auto;
+  display: grid;
+}
+
+.page span {
+  margin-left: 2rem;
+  color: #333;
+}
+.page li {
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .page ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .page ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    column-gap: 2rem;
+  }
+}
